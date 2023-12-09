@@ -1,0 +1,40 @@
+body{
+    margin: 0%;
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: 1px solid blue;
+    margin: 0%;
+}
+.header-top div p:nth-child(3){
+    color: #545352;
+    text-shadow: 0px 0px 5px #545352;
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: 10% 50% 30%;
+    justify-content: center;
+}
+.header-bottom div:first-child img{
+    width: 100%;
+}
+.header-bottom div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-bottom div:last-child input{
+    border-color: skyblue;
+    border-radius: 35px;
+    width: 60%;
+    margin: 40px 0px;
+    height: 35%;
+    border-style: groove;
+}
+.header-bottom div:last-child i{
+    font-size: x-large;
+    margin: 7px;
+}
