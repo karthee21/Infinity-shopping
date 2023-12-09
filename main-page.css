@@ -79,6 +79,9 @@ body{
     padding: 10px;
 }
 /*     CATEGORIES     */
+.categories{
+    margin: 80px
+}
 .categories>div:first-child{
     display: grid;
     grid-template-columns: 85% 5% 5%;
@@ -107,4 +110,58 @@ body{
 .categories div div img{
     width: 100%;
     border-radius: 15px;
+}
+/*     PRODUCT BUTTONS      */
+.product-btns>div button{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    background-color: #87ceeb85;
+}
+.product-btns>div button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.product-btns>div button:hover{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px lightgreen;
+}
+/*      PRODUCTS      */
+.products>div{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-evenly;
+    margin: 60px;
+}
+.products div div{
+    border: 0.5px solid #87ceeb82;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #87ceebc2;
+}
+.products div div img{
+    width: 100%;
+    border-radius: 15px;
+}
+.products div div p{
+    color: gray;
+}
+.products div div h6{
+    text-decoration: line-through;
+    color: gray;
+    margin: 10px 0px;
+}
+.products div div h3{
+    margin: 10px 0px
+}
+.products div div i{
+    color: gold;
+    margin: 15px 5px;
+}
+/*     DEALS      */
+.deals{
+    display: flex;
+    justify-content: space-around;
 }
