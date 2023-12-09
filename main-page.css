@@ -1,6 +1,7 @@
 body{
     margin: 0%;
 }
+/*     HEADER - TOP   */
 .header-top{
     display: flex;
     justify-content: space-around;
@@ -13,6 +14,7 @@ body{
     color: #545352;
     text-shadow: 0px 0px 5px #545352;
 }
+/*     HEADER - BOTTOM     */
 .header-bottom{
     display: grid;
     grid-template-columns: 10% 50% 30%;
@@ -26,6 +28,14 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+.header-bottom div a{
+    text-decoration: none;
+    color: black;
+}
+.header-bottom div h4:hover{
+    color: blue;
+    text-shadow: 0px 0px 10px blue;
+}
 .header-bottom div:last-child input{
     border-color: skyblue;
     border-radius: 35px;
@@ -37,4 +47,34 @@ body{
 .header-bottom div:last-child i{
     font-size: x-large;
     margin: 7px;
+}
+/*      BANNER        */
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 20px lightblue;
+}
+.banner div:first-child{
+    font-size: x-large;
+    align-self: center;
+}
+.banner div h6{
+   color:#000000a8;
+}
+.banner div h2:nth-child(3){
+    color: #00b5ff;
+    font-style: oblique;
+}
+.banner div p{
+    font-size: small;
+}
+.banner div button{
+    padding: 10px 20px;
+    background-color: skyblue;
+    border-radius: 15px;
+    border: 2px solid blue;
+    border-style: double;
+}
+.banner div:last-child{
+    padding: 10px;
 }
