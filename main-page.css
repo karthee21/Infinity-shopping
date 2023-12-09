@@ -78,3 +78,33 @@ body{
 .banner div:last-child{
     padding: 10px;
 }
+/*     CATEGORIES     */
+.categories>div:first-child{
+    display: grid;
+    grid-template-columns: 85% 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+.categories>div p{
+    border: 1px solid blue;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: skyblue;
+    font-weight: bolder;
+}
+.categories>div:last-child{
+    display: grid;
+    grid-template-columns: repeat(6, 13%);
+    justify-content: space-evenly;
+    text-align: center;
+}
+.categories div div{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+}
+.categories div div img{
+    width: 100%;
+    border-radius: 15px;
+}
