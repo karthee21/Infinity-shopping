@@ -126,7 +126,7 @@ body{
 }
 .product-btns>div button:hover{
     background-color: lightgreen;
-    box-shadow: 0px 0px 10px lightgreen;
+    box-shadow: 0px 0px 10px green;
 }
 /*      PRODUCTS      */
 .products>div{
@@ -153,15 +153,182 @@ body{
     color: gray;
     margin: 10px 0px;
 }
-.products div div h3{
-    margin: 10px 0px
+.products div div span{
+    margin: 10px 0px;
+    font-family: system-ui;
+    color: mediumblue;
+}
+.products div div button{
+    margin: 0px 0px 0px 130px;
+    font-size: x-large;
+    border-radius: 40%;
+    background-color: skyblue;
+    padding: 0px 15px;
+}
+.products div div button i{
+    color: blue;
 }
 .products div div i{
+    justify-self: end;
     color: gold;
     margin: 15px 5px;
 }
 /*     DEALS      */
 .deals{
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 40%;
     justify-content: space-around;
 }
+.deals div:first-child{
+    background-image: url(../assets/img/deals-1.jpg);
+    padding: 20px;
+}
+.deals div:last-child{
+    background-image: url(../assets/img/deals-2.png);
+    padding: 20px;
+}
+/* DEALS TEXT */
+.deals div h2{
+    color: #009aff;
+    font-family: cursive;
+}
+.deals div p{
+    color: #545352;
+}
+.deals div h4{
+    margin: 0px;
+    font-family: system-ui;
+}
+.offer-price{
+    margin: 0px 25px 0px 0px;
+    color: red;
+    font-size: larger;
+}
+.original-price{
+    text-decoration: line-through;
+    font-style: italic;
+}
+.deals div .time{
+    background: #00adff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.deals div .time-text{
+    margin: 21px;
+}
+/*     NEW ARRIVALS     */
+.newarrivals~div:first-child{
+    text-align: center;
+    margin: 50px;
+}
+.new-products>div{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-evenly;
+    margin: 60px;
+}
+.new-products div div{
+    border: 0.5px solid #87ceeb82;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #87ceebc2;
+}
+.new-products div div img{
+    width: 100%;
+    border-radius: 15px;
+}
+.new-products div div p{
+    color: gray;
+}
+.new-products div div h6{
+    text-decoration: line-through;
+    color: gray;
+    margin: 10px 0px;
+}
+.new-products div div span{
+    margin: 10px 0px;
+    font-family: system-ui;
+    color: mediumblue;
+}
+.new-products div div button{
+    margin: 0px 0px 0px 130px;
+    font-size: x-large;
+    border-radius: 40%;
+    background-color: skyblue;
+    padding: 0px 15px;
+    border: none;
+}
+.new-products div div button:hover{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px green;
+}
+.new-products div div button i{
+    color: blue;
+}
+.new-products div div i{
+    justify-self: end;
+    color: gold;
+    margin: 15px 5px;
+}
+.all-in-one>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    border-bottom: 0.5px solid gray;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+.showcase-line{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+.showcase-line>div{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px skyblue;
+}
+.showcase-line div img{
+    width: 30%;
+}
+.showcase-line div span h3{
+    margin: 3px 0px;
+}
+.showcase-line div>span{
+    margin-top: 20px;
+}
+.showcase-line>div>span{
+    align-self: center;
+}
+.showcase-line div span div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: baseline;
+}
+/*      SUBSCRIBE SECTION       */
+.subscribe{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+    margin: 50px 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #dddfff;
+    height: 150px;
+}
+.subscribe div input[type="email"]{
+    padding: 10px;
+    background-color: #87ceeb59;
+    border: 0.2px solid darkgreen;
+    border-radius: 5px 0px 0px 5px;
+    width: 250px;
+}
+    .subscribe div input[type="submit"]{
+    padding: 10px;
+    border: 0.5px solid;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    background-color: darkblue;
+    }
