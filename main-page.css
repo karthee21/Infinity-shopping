@@ -286,7 +286,7 @@ body{
 }
 .showcase-line>div{
     display: flex;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     box-shadow: 0px 0px 5px skyblue;
 }
@@ -295,9 +295,11 @@ body{
 }
 .showcase-line div span h3{
     margin: 3px 0px;
+    color: green;
 }
-.showcase-line div>span{
+.showcase-line div>span div span{
     margin-top: 20px;
+    text-decoration: line-through;
 }
 .showcase-line>div>span{
     align-self: center;
@@ -325,10 +327,60 @@ body{
     border-radius: 5px 0px 0px 5px;
     width: 250px;
 }
-    .subscribe div input[type="submit"]{
+.subscribe div input[type="submit"]{
     padding: 10px;
     border: 0.5px solid;
     border-radius: 0px 5px 5px 0px;
     color: white;
     background-color: darkblue;
-    }
+}
+/*     FOOTER     */
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    
+}
+footer div:first-child img{
+    width: 40%;
+}
+footer div:first-child address{
+    margin-bottom: 20px;
+}
+footer div:first-child a:nth-child(7){
+    color: white;
+    background-color: deepskyblue;
+    font-size: x-large;
+    padding: 5px;
+    border-radius: 5px;
+}
+footer div:first-child a:nth-child(8){
+    color: white;
+    background-color: blue;
+    font-size: x-large;
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+footer div:first-child a:nth-child(9){
+    color: white;
+    background-image: linear-gradient(145deg, #1025c2,orange,red,pink,blue);
+    font-size: x-large;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+footer div a{
+    text-decoration: none;
+    color: black;
+}
+.disclaimer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.disclaimer b b{
+    color: transparent;
+    background: linear-gradient(to left,violet,indigo,blue,green,orange,red);
+    background-clip: text;
+}
