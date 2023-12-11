@@ -80,12 +80,13 @@ body{
  }
  .details-a div:last-child{
     margin-left: 20px;
+    border-bottom: 0.5px solid gray;
  }
  .details-a div h2:first-child{
     font-family: system-ui;
     font-size: xx-large;
  }
- .details-a>div span:nth-child(3) {
+ .details-a>div>span:nth-child(3) {
     color: green;
     font-family: sans-serif;
 }
@@ -103,7 +104,7 @@ body{
     color: #726e6e;
     font-family: serif;
 }
-.details-a div span:last-child{
+.details-a div>span:last-child{
     font-size: larger;
     font-family: serif;
 }
@@ -115,4 +116,114 @@ body{
 }
 .details-a div p:nth-child(8),.details-a div p:nth-child(9),.details-a div p:nth-child(10){
     color: #2c2c2c;;
+}
+/*       COLORS         */
+.details-a div .colors{
+    margin: 30px 0px;
+}
+.details-a div .colors>span{
+    border-radius: 50%;
+    padding: 5px 15px;
+    margin: 5px;
+}
+.details-a div .colors>span:first-child{
+    background-color: blue;
+}
+.details-a div .colors>span:first-child:hover{
+    box-shadow: 0px 0px 5px blue;
+}
+.details-a div .colors>span:nth-child(2){
+    background-color: green;
+}
+.details-a div .colors>span:nth-child(2):hover{
+    box-shadow: 0px 0px 5px green;
+}
+.details-a div .colors>span:nth-child(3){
+    background-color: rebeccapurple;
+}
+.details-a div .colors>span:nth-child(3):hover{
+    box-shadow: 0px 0px 5px rebeccapurple;
+}
+.details-a div .colors>span:nth-child(4){
+    background-color: rgb(245, 91, 116);
+}
+.details-a div .colors>span:nth-child(4):hover{
+    box-shadow: 0px 0px 5px rgb(245, 91, 116);
+}
+.details-a div .colors>span:nth-child(5){
+    background-color: orange;
+}
+.details-a div .colors>span:nth-child(5):hover{
+    box-shadow: 0px 0px 5px orange;
+}
+/*   SIZE   */
+.size{
+    margin: 30px 0px;
+}
+.size span{
+    margin: 5px;
+    border: 1px solid;
+    padding: 3px 10px;
+}
+.details-a div input[type=number]{
+    width: 50px;
+    height: 30px;
+    border: 0.5px solid;
+    padding: 2px;
+}
+.details-a div input[type=submit]{
+    width: 90px;
+    height: 35px;
+    border: 0.5px solid;
+    padding: 10px;
+    background-color: rgb(0, 160, 107);
+    border-radius: 3px;
+}
+.details-a div a:last-child{
+    font-size: x-large;
+    color: red;
+    margin: 10px;
+    vertical-align: middle;
+    border: 0.5px solid gray;
+    padding: 4px;
+    background-color: #00a06b4d;
+    border-radius: 3px;
+}
+.details-a div a:last-child:hover{
+    text-shadow: 0px 0px 5px red;
+}
+.details-b{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin-top: 15px;
+}
+.details-b div:first-child{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.details-b div:first-child img{
+    width: 100%;
+}
+.details-b div:last-child{
+    margin-left: 20px;
+}
+.add-info div:first-child{
+    display: flex;
+}
+.add-info div:first-child h2{
+    margin: 20px 30px;
+}
+.add-info div:first-child h2:first-child{
+    color: green;
+}
+.add-info div table{
+    width: 98%;
+    margin: 20px
+}
+.add-info div table tr td{
+    padding: 15px;
+    border: 0.1px solid gray;
+    width: 50%;
 }
