@@ -133,7 +133,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: space-evenly;
-    margin: 60px;
+    margin: 40px;
 }
 .products div div{
     border: 0.5px solid #87ceeb82;
@@ -177,7 +177,7 @@ body{
 .deals{
     display: grid;
     grid-template-columns: 40% 40%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .deals div:first-child{
     background-image: url(../assets/img/deals-1.jpg);
@@ -218,6 +218,9 @@ body{
     margin: 21px;
 }
 /*     NEW ARRIVALS     */
+.new-arrivals{
+    margin: 40px;
+}
 .newarrivals~div:first-child{
     text-align: center;
     margin: 50px;
