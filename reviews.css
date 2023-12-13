@@ -209,30 +209,73 @@ body{
 .details-b div:last-child{
     margin-left: 20px;
 }
-.add-info div:first-child{
+.reviews>div:first-child{
     display: flex;
 }
-.add-info div:first-child a{
+.reviews>div:first-child a{
     margin: 20px 30px;
     text-decoration: none;
 }
-.add-info div:first-child a:first-child{
+.reviews>div:first-child a:last-child{
     color: green;
 }
-.add-info div:first-child a:last-child:hover{
+.reviews>div:first-child a:first-child:hover{
     color: green;
     text-shadow: 0px 0px 5px rgb(119, 230, 119);
 }
-.add-info div table{
-    width: 98%;
-    margin: 20px
+.reviews>div:last-child div {
+    display: grid;
+    grid-template-columns: 7% 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px;
+    border-bottom: 0.5px solid green;
 }
-.add-info div table tr td{
-    padding: 15px;
-    border: 0.1px solid gray;
-    width: 50%;
+.reviews>div:last-child div section:first-child {
+    text-align: center;
+    margin-bottom: 40px;
 }
-/*     RELATED PRODUCTS    */
+.reviews>div:last-child div section:first-child img{
+    width: 100%;
+    border-radius: 50%;
+}
+.reviews>div:last-child div section:last-child i{
+    color: gold;
+}
+.new-review div:first-child{
+    font-size: x-large;
+    margin: 40px 70px;
+}
+.new-review div:nth-child(2){
+    text-align: center;
+}
+.new-review div:nth-child(2) textarea{
+    width: 90%;
+    border: 0.5px solid gray;
+}
+.new-review div:nth-child(2) input{
+    width: 42%;
+    margin: 25px;
+    padding: 9px;
+    border: 0.5px solid gray;
+}
+.new-review div:last-child input{
+    margin: 0px 80px;
+    padding: 8px 25px;
+    background-color: #088179;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
 .related{
     margin: 40px;
 }

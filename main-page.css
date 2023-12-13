@@ -306,6 +306,8 @@ body{
 }
 .showcase-line>div>span{
     align-self: center;
+    align-self: center;
+    padding: 5px;
 }
 .showcase-line div span div{
     display: grid;
@@ -340,7 +342,7 @@ body{
 /*     FOOTER     */
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 20px;
     border-bottom: 1px solid;
     margin-bottom: 10px;
