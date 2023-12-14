@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
+    <title>Cart</title>
 </head>
 <body>
     <header>
@@ -49,30 +49,55 @@
         <span>></span>
         <span>Login/Register</span>
     </div>
-    <div class="register">
-        <div class="login">
-            <div>
-               <h2>Login</h2>
-               <input type="email" placeholder="Your Email"><br>
-               <input type="password" placeholder="Your password"><br>
-            </div>
-            <div>
-               <input type="submit" value="Login">
-            </div>
-        </div>
-        <div class="create-ac">
-            <div>
-                <h2>Create an Account</h2>
-                <input type="text" placeholder="Username"><br>
-                <input type="email" placeholder="Your Email"><br>
-                <input type="password" placeholder="Your password"><br>
-                <input type="password" placeholder="Conform password"><br>
-            </div>
-            <div>
-                <input type="submit">
-            </div>
-        </div>
+    <div>
+        <table cellspacing="0">
+            <tr>
+                <td>Image</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+                <td>Rename</td>
+            </tr>
+            <tr>
+                <td><img src="../assets/img/product-1-1.jpg" alt="photo"></td>
+                <td>
+                    <p>J.crew Mercantile Women's Short-Sleeve</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </td>
+                <td>$110</td>
+                <td><input type="number"></td>
+                <td>$220</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td><img src="../assets/img/product-6-1.jpg" alt="photo"></td>
+                <td>
+                    <p>Amezon Essentials Women's Tank</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </td>
+                <td>$110</td>
+                <td><input type="number"></td>
+                <td>$220</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td><img src="../assets/img/product-8-1.jpg" alt="photo"></td>
+                <td>
+                    <p>Amezon Brand - Daily Ritual Women's Jersey</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </td>
+                <td>$110</td>
+                <td><input type="number"></td>
+                <td>$220</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+        </table>
     </div>
+
+
+
+    
     <div class="subscribe">
         <div>
             <h2>Sign in to Newsletter</h2>
