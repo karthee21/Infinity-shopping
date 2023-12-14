@@ -6,14 +6,14 @@ body{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: lightblue;
-    border-bottom: 1px solid blue;
+    background-color: #e9f6eb;
+    border-bottom: 1px solid #3b9c93;
     margin: 0%;
 }
-.header-top div p:nth-child(3){
-    color: #545352;
-    text-shadow: 0px 0px 5px #545352;
+.header-top p a{
+    text-decoration: none;
 }
+
 /*     HEADER - BOTTOM     */
 .header-bottom{
     display: grid;
@@ -32,13 +32,16 @@ body{
     text-decoration: none;
     color: black;
 }
+.header-bottom div a[href="Main-page.html"]{
+    color: green;
+}
 .header-bottom div h4:hover{
     color: blue;
     text-shadow: 0px 0px 10px blue;
 }
 .header-bottom div:last-child input{
     border-color: skyblue;
-    border-radius: 35px;
+    border-radius: 5px;
     width: 60%;
     margin: 40px 0px;
     height: 35%;
@@ -58,22 +61,25 @@ body{
     font-size: x-large;
     align-self: center;
 }
+.banner div:first-child h2 span{
+    color: #088179;
+}
 .banner div h6{
-   color:#000000a8;
+    color: #425950;
+    font-family: sans-serif;
 }
 .banner div h2:nth-child(3){
-    color: #00b5ff;
-    font-style: oblique;
+    color: #088179;
 }
 .banner div p{
     font-size: small;
 }
 .banner div button{
     padding: 10px 20px;
-    background-color: skyblue;
-    border-radius: 15px;
-    border: 2px solid blue;
-    border-style: double;
+    background-color: #088179;
+    border-radius: 3px;
+    color: white;
+    border: none;
 }
 .banner div:last-child{
     padding: 10px;
@@ -93,7 +99,7 @@ body{
     width: fit-content;
     border-radius: 50%;
     padding: 5px 10px;
-    background-color: skyblue;
+    background-color: #e9f6eb;
     font-weight: bolder;
 }
 .categories>div:last-child{
@@ -128,6 +134,10 @@ body{
     background-color: lightgreen;
     box-shadow: 0px 0px 10px green;
 }
+.product-btns>div:first-child button:first-child{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px green;
+}
 /*      PRODUCTS      */
 .products>div{
     display: grid;
@@ -144,6 +154,9 @@ body{
 .products div div img{
     width: 100%;
     border-radius: 15px;
+}
+.products div div img:hover{
+    background-image: url(../assets/img/product-11-1.jpg);
 }
 .products div div p{
     color: gray;
@@ -255,7 +268,7 @@ body{
     color: mediumblue;
 }
 .new-products div div button{
-    margin: 0px 0px 0px 130px;
+    margin: 0px 0px 0px 114px;
     font-size: x-large;
     border-radius: 40%;
     background-color: skyblue;
@@ -342,7 +355,7 @@ body{
 /*     FOOTER     */
 footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 20px;
     border-bottom: 1px solid;
     margin-bottom: 10px;
