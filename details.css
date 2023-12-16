@@ -50,6 +50,7 @@ body{
 }
 .header-bottom div:last-child a{
     font-size: x-large;
+    margin: 10px;
 }
 .header-bottom div:last-child a[href='wishlist.html']:hover{
     color: red;
