@@ -42,11 +42,15 @@ body{
     height: 35%;
     border-style: groove;
 }
+.header-bottom div:last-child>i{
+    font-size: x-large;
+    position: relative;
+    right: 40px;
+}
 .header-bottom div:last-child a{
     font-size: x-large;
-    margin: 7px;
 }
-.header-bottom div:last-child a:nth-child(2):hover{
+.header-bottom div:last-child a[href='wishlist.html']:hover{
     color: red;
     text-shadow: 0px 0px 20px red;
 }
@@ -68,7 +72,10 @@ body{
     margin: 0px 10px;
 }
 /*      WISHLIST       */
-div table{
+.table{
+    margin-bottom: 120px;
+}
+div .table{
     padding: 40px
 }
 div table tr td{
@@ -93,6 +100,75 @@ div table tr td input{
     border-radius: 2px;
     padding: 5px;
 }
+.table div{
+    float: inline-end;
+}
+.table div button{
+    padding: 12px;
+    background-color: #088179;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+} 
+/* CALCULATION */
+.calculation{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    border-top: 0.5px solid gray;
+    margin: 80px;
+}
+.calculation>div{
+    margin: 50px;
+}
+.calculation>div>div:first-child>input:nth-child(2){
+    width: 96%;
+    padding: 10px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+.calculation div div div{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+.calculation div div div input{
+    padding: 10px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+.calculation div div button{
+    padding: 12px 25px;
+    background-color: #088179;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+.calculation>div div:last-child input{
+    width: 77%;
+    padding: 10px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+.calculation>div:last-child div{
+    border: 0.5px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculation>div:last-child div table{
+    border: 0.1px solid gray;
+}
+.calculation>div:last-child div table tr td{
+    width: 1%;
+    border: 0.1px solid gray;
+    padding: 10px;
+}
+
+
 
 
 
@@ -109,6 +185,15 @@ div table tr td input{
     text-align: center;
     background-color: #adccc5;
     height: 150px;
+}
+.subscribe div:first-child{
+    display: grid;
+    grid-template-columns: 10% 55%;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe div:first-child img{
+    width: 100%;
 }
 .subscribe div input[type="email"]{
     padding: 10px;
