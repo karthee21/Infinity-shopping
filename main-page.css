@@ -202,7 +202,7 @@ body{
 /*     DEALS      */
 .deals{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 44% 44%;
     justify-content: space-evenly;
 }
 .deals div:first-child{
@@ -211,6 +211,7 @@ body{
 }
 .deals div:last-child{
     background-image: url(../assets/img/deals-2.png);
+    background-size: cover;
     padding: 20px;
 }
 /* DEALS TEXT */
@@ -445,6 +446,19 @@ footer div a{
         padding: 0px 15px;
         border: none;
     }
+    .subscribe div input[type="submit"] {
+        padding: 10px;
+        border: 0.5px solid;
+        border-radius: 0px 5px 5px 0px;
+        color: white;
+        background-color: darkblue;
+        border-top: 0.2px solid green;
+        border-right: 0.2px solid green;
+        border-bottom: 0.2px solid green;
+        border-left: none;
+        position: relative;
+        right: 10px;
+    }
 }   
 @media only screen and (max-width:1023px){
     .header-top{
@@ -526,6 +540,7 @@ footer div a{
         display: grid;
         grid-template-columns: 90%;
         justify-content: space-evenly;
+        width: 104%;
     }
     .deals div{
         margin: 10px;
@@ -611,6 +626,11 @@ footer div a{
         border-bottom: 1px solid;
         margin-bottom: 10px;
         width: 105.5%;
+        font-size: 10px;
+    }
+    footer>div:first-child{
+        padding: 0px 7px;
+        width: 160px;
     }
     footer>div:first-child a{
         font-size: large;
@@ -621,5 +641,222 @@ footer div a{
     footer div img{
         width: 90%;
     }
+    footer div:first-child a:nth-child(7),footer div:first-child a:nth-child(8),footer div:first-child a:nth-child(9){
+        font-size: large;
+    }
+}
+@media only screen and (max-width:374px){
+    .header-top {
+        width: 120%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #e9f6eb;
+        border-bottom: 1px solid #3b9c93;
+        font-size: 9px;
+    }
+    .header-bottom {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        width: 120%;
+    }
+    .header-bottom div:first-child img {
+        width: 15%;
+    }
+    .header-bottom div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 25px;
+    }
+    .header-bottom div:last-child input{
+        margin: 20px 0px;
+        width: 150px;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        width: 120%;
+        padding-bottom: 10px;
+    }
+    /* BANNER TEXT */
+    .banner div:first-child {
+        font-size: 14px;
+    }
+    .banner div p {
+        font-size: 9px;
+    }
+    .banner div button {
+        padding: 5px 9px;
+        background-color: #088179;
+        border-radius: 3px;
+        color: white;
+        border: none;
+        font-size: 7px;
+    }
+    .categories {
+        margin: 32px;
+        width: 101%;
+    }
+    .categories>div:first-child {
+        display: grid;
+        grid-template-columns: 82% 14% 14%;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+    }
+    .categories>div:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, 27%);
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .categories div div{
+        margin-bottom: 12px;
+    }
+    .products>div {
+        display: grid;
+        grid-template-columns: repeat(1, 83%);
+        margin: 32px;
+        width: 100%;
+    }
+    .products div div i {
+        color: gold;
+        margin: 8px 5px;
+    }
+    .products div div button {
+        padding: 6px 15px;
+    }
+    /* DEALS */
+    .deals {
+        display: grid;
+        grid-template-columns: 104%;
+        width: 120%;
+        font-size: 11px;
+    }
+    .deals div:first-child {
+        background-image: url(../assets/img/deals-1.jpg);
+        padding: 20px;
+        background-size: 109%;
+        height: 75%;
+    }
+    .deals div:last-child {
+        background-image: url(../assets/img/deals-2.png);
+        padding: 20px;
+        background-size: 130%;
+        height: 75%;
+    }
+    .product-btns>div button {
+        margin: 10px;
+        padding: 7px;
+        border-radius: 5px;
+        border: none;
+        background-color: #87ceeb85;
+        font-size: 7px;
+    }
+    .new-products>div {
+        display: grid;
+        grid-template-columns: repeat(1, 110%);
+        justify-content: space-evenly;
+        margin: 25px;
+        width: 100%;
+    }
+    .new-products div div i {
+        color: gold;
+        margin: 6px;
+    }
+    .new-products div div button {
+        margin-left: 99px;
+        padding: 5px 12px;
+        font-size: 20px;
+    }
+    .all-in-one {
+        width: 116%;
+        font-size: 8px;
+        position: relative;
+        left: 8px;
+    }
+    .showcase-line>div {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: 4px 6px;
+        padding: 0px 0px;
+        box-shadow: 0px 0px 3px skyblue;
+    }
+    .showcase-line div img {
+        width: 100%;
+    }
+    .showcase-line div span div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: baseline;
+        font-size: 5px;
+    }
+    .showcase-line div span h3 {
+        margin: 3px 0px 0px 0px;
+        color: green;
+    }
+    .showcase-line div>span div span {
+        text-decoration: line-through;
+        margin: 0px 3px;
+    }
+    /* SUBSCRIBE */
+        .subscribe{
+            width: 120%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 100px;
+        }
+        .subscribe div:first-child {
+            display: grid;
+            grid-template-columns: 11% 72%;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 8px;
+        }
+        .subscribe div:nth-child(2) {
+            font-size: 10px;
+        }
+        .subscribe div:last-child{
+            width: 200%;
+            display: grid;
+            grid-template-columns: 50% 25%;
+            justify-content: center;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            border-bottom: 0.3px solid;
+            margin-bottom: 10px;
+            width: 120%;
+            font-size: 9px;
+        }
+        footer div h2 {
+            font-size: 8px;
+            text-align: center;
+        }
+        footer div:first-child a:nth-child(7), footer div:first-child a:nth-child(8), footer div:first-child a:nth-child(9) {
+            font-size: smaller;
+            padding: 4px 5px;
+        }
+        footer div:last-child{
+            display: grid;
+            grid-template-rows: 10% 20%;
+            justify-items: center;
+        }
+        footer div img {
+            width: 70%;
+        }
+        .disclaimer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 120%;
+            font-size: 7px;
+        }
+
+
+
 
 }
